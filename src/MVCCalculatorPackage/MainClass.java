@@ -3,7 +3,12 @@ package MVCCalculatorPackage;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		PanelKalkulatora panelKalkulatora = new PanelKalkulatora();
+		Liczydlo liczydlo = new Liczydlo();
+		KontrolerKalkulatora kontroler = new KontrolerKalkulatora(panelKalkulatora,liczydlo);
+		
+		panelKalkulatora.setVisible(true);
 
 	}
 
